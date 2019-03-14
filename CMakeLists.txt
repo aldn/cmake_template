@@ -1,8 +1,13 @@
 cmake_minimum_required (VERSION 3.12)
 
-project (foo)
+project(cmake_template)
 
-set(CMAKE_CXX_STANDARD 14)
+add_compile_options(
+    "$<$<OR:$<CXX_COMPILER_ID:Clang>,$<CXX_COMPILER_ID:GNU>>:-Wall;-Werror>"
+    "$<$<CXX_COMPILER_ID:MSVC>:/W4;/WX>"
+    )
+
+
 #set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_subdirectory(src)

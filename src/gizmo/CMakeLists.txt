@@ -1,16 +1,17 @@
-
-add_library(gizmo
-    src/GizmoFactory.cpp
-    src/FancyGizmo.cpp
-    src/WhirringGizmo.cpp
-    )
+add_subdirectory(src)
 
 target_include_directories(gizmo
-    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
-    PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src
+    PUBLIC
+        include
+    PRIVATE
+        src
+        src/types
     )
 
-target_link_libraries(gizmo
-    utils
+target_compile_features(gizmo
+    PUBLIC
+        cxx_nullptr
+    PRIVATE
+        cxx_lambdas
+        cxx_range_for
     )
-

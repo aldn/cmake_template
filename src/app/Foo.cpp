@@ -6,7 +6,8 @@ int main(int argc, char **argv)
 {
     if (argc > 1)
     {
-        auto impl = GizmoFactory::create(argv[1]);
+        GizmoFactory fac;
+        auto impl = fac.create(argv[1]);
 
         if (impl)
         {

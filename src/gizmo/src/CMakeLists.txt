@@ -1,9 +1,10 @@
 
-add_subdirectory(types)
 
 add_library(gizmo
     GizmoFactory.cpp
-    $<TARGET_OBJECTS:gizmo_types> )
+    types/FancyGizmo.cpp
+    types/WhirringGizmo.cpp
+     )
 
 target_link_libraries(gizmo
     utils)
