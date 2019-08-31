@@ -1,0 +1,5 @@
+flags=-x c++ -Wall -std=c++14
+flags=-Isrc/utils/include
+flags=-Isrc/gizmo/include
+flags=-Isrc/gizmo/src
+

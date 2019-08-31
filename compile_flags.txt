@@ -1,6 +1,6 @@
-clang
-%c -std=c11
-%cpp -std=c++14
+-Wall
+-std=c++14
 -Isrc/utils/include
 -Isrc/gizmo/include
 -Isrc/gizmo/src
+

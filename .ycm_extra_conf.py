@@ -8,9 +8,9 @@ def Settings( **kwargs ):
         '-Werror' ,
         '-std=c++14',
 
-        '-Iutils/include',
-        '-Igizmo/include',
-        '-Igizmo/src',
+        '-Isrc/utils/include',
+        '-Isrc/gizmo/include',
+        '-Isrc/gizmo/src',
         ],
   }
 

@@ -1,5 +1,0 @@
-flags=-x c++ -Wall -std=c++14
-flags=-Iutils/include
-flags=-Igizmo/include
-flags=-Igizmo/src
-
